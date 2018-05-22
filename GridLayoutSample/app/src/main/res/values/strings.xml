@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">GridLayoutSample</string>
+	<string name="left">Left</string>
+	<string name="bottom">Bottom</string>
+	<string name="center">Center</string>
+	<string name="right">Right</string>
+</resources>
