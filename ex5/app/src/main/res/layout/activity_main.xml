@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nitheesh.ex5.MainActivity">
+
+    <Button
+        android:text="Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/selectall"
+        android:layout_toStartOf="@+id/delete" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:layout_alignBaseline="@+id/insert"
+        android:layout_alignBottom="@+id/insert"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_alignBaseline="@+id/delete"
+        android:layout_alignBottom="@+id/delete"
+        android:layout_toEndOf="@+id/delete" />
+
+    <Button
+        android:text="Select All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectall"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/update"
+        android:layout_marginEnd="33dp" />
+
+    <Button
+        android:text="Select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
+        android:layout_alignBaseline="@+id/selectall"
+        android:layout_alignBottom="@+id/selectall"
+        android:layout_alignEnd="@+id/update"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_toStartOf="@+id/delete"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_above="@+id/textView7" />
+
+    <TextView
+        android:text="ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id"
+        android:layout_alignEnd="@+id/textView8"
+        android:id="@+id/textView9"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/email"
+        android:layout_alignStart="@+id/insert" />
+
+    <TextView
+        android:text="Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/id"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_marginStart="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/id"
+        android:layout_alignStart="@+id/id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/name" />
+</RelativeLayout>
